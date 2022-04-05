@@ -7,7 +7,7 @@ from fastfood.db.db import conn
 import psycopg2.extras
 
 from werkzeug.security import check_password_hash,generate_password_hash
-from flask_jwt_extended import unset_jwt_cookies, create_access_token,create_refresh_token,jwt_required,get_jwt_identity,jwt_manager
+from flask_jwt_extended import unset_jwt_cookies, create_access_token,jwt_required,get_jwt_identity,jwt_manager
 
 bp =Blueprint('auth', __name__, url_prefix='/auth')
 #Opening a cursor to perform database operations
